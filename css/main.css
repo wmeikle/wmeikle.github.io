@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(190, 213, 236);
+}
+
+#content {
+    background-color: aliceblue;
+    max-width: 50%;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+img {
+    float: right;
+    margin-top: .25em;
+    margin-bottom: 1.5em;
+    margin-right: 2.5em;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.25) .5em .5em;
+}
+
+header,
+footer {
+    background-color: #01272e;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+}
+
+#lastModified {
+    margin-right: 300px;
+}
+
+.BYUI {
+    color: aliceblue;
+}
+
+footer a:hover {
+    color: deeppink;
+}
+
+main {
+    padding: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    #content {
+      max-width: 90%;
+      background-color: #FFF9F9;
+      margin: auto;
+    }
