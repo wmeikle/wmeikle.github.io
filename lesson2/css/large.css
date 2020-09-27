@@ -1,4 +1,4 @@
-@media screen and (min-width:1050px) {
+@media only screen and (min-width:1050px) {
   .principles {
     column-fill: auto;
     columns: 3 20vw;
@@ -7,9 +7,9 @@
     margin: 3vh 0vw;
   }
 
+main {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+}
 
-  .photo img {
-    height: auto;
-    width: 20vw;
-  }
 }

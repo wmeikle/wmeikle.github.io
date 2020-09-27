@@ -2,32 +2,57 @@ body {
     background-color: rgb(190, 213, 236);
 }
 
-.intro {
+header {
+    margin: 1em auto;
+    max-width: 75em;
+    height: auto;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #01272e;
+    text-align: center;
+    padding: 1em;
+}
+
+header h1 {
     font-size: 2em;
-    width: fit-content;
-    line-height: 8vh;
-    float: left;
+    line-height: 1px;
+    text-align: center;
     font-family: 'Oswald', sans-serif;
 }
 
-#principles {
-    background-color: aliceblue;
-    max-width: 50%;
-    margin: 100px auto;
-    border-radius: 10px;
+h2 {
+    font-size: 1rem;
+    color: black;
+    font-family: 'Oswald' , sans-serif;
+    text-align: center;
 }
 
-header,
+
+main {
+    background-color: aliceblue;
+    color: black;
+    max-width: 70em;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .1rem;
+    margin: 1rem auto;
+    font-size: 1em;
+    font-family: 'Oswald' , sans-serif;
+  }
+
+section {
+    margin: .5rem;
+    padding: 1rem;
+}  
+ 
 footer {
     background-color: #01272e;
     border-radius: 10px;
     text-align: center;
     padding: 10px;
     color: aliceblue;
-}
-
-.designTitle {
-    grid-row: 2;
+    max-width: 75em;
+    margin: 1em auto;
 }
 
 .designExplanation {
@@ -36,15 +61,8 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
-.photo {
-    text-align: center;
-    padding: 1vh 0vw;
-    color: black;
-  }
-
-.photo img {
-    width: 250px;
-    height: auto;
+img {
+    max-width: 100%;
 }
   
 
@@ -58,8 +76,4 @@ footer {
 
 footer a:hover {
     color: deeppink;
-}
-
-main {
-    padding: 20px;
 }

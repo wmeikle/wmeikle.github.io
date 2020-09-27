@@ -1,32 +1,15 @@
-@media screen and (min-width:750px) {
-  .principles {
-    columns: 2 30vw;
-    column-gap: 5em;
-    column-rule: var(#01272e) solid .25em;
-  }
+@media only screen and (min-width:32.5em) {
 
-  .designPrinciple {
+h2 {
+  font-size: 1.5rem;
+}
+
+main {
     display: grid;
-    border-radius: 2.5em;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-  }
-
-  .designTitle {
-    grid-row: 2;
-  }
-
-  .photo {
-    display: flex;
-    flex-direction: column;
-    grid-row: 1;
-    font-size: .75em;
-  }
-
-  .photo img {
-    width: 30vw;
-    height: auto;
-    margin: 0px 0px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 70em;
+    font-size: 0.8rem;
   }
 
 figcaption{
