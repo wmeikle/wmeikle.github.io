@@ -2,7 +2,15 @@ body {
     background-color: rgb(190, 213, 236);
 }
 
-#content {
+.title {
+    font-family: var(--heading-font, cursive);
+    font-size: 2em;
+    width: fit-content;
+    line-height: 8vh;
+    float: left;
+}
+
+#principles {
     background-color: aliceblue;
     max-width: 50%;
     margin: 100px auto;
@@ -10,12 +18,9 @@ body {
 }
 
 img {
-    float: right;
-    margin-top: .25em;
-    margin-bottom: 1.5em;
-    margin-right: 2.5em;
-    border-radius: 2em;
-    box-shadow: rgba(0, 0, 0, 0.25) .5em .5em;
+    width: 30vw;
+    height: auto;
+    margin: 0px 0px;
 }
 
 header,
@@ -25,6 +30,22 @@ footer {
     text-align: center;
     padding: 10px;
     color: aliceblue;
+}
+
+.designTitle {
+    grid-row: 2;
+}
+
+.designExplanation {
+    grid-row: 3;
+    line-height: 1.5em;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    font-size: .75em;
 }
 
 #lastModified {
@@ -42,10 +63,3 @@ footer a:hover {
 main {
     padding: 20px;
 }
-
-@media screen and (max-width: 750px) {
-    #content {
-      max-width: 90%;
-      background-color: #FFF9F9;
-      margin: auto;
-    }
