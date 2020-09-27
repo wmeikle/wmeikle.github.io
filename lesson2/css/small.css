@@ -2,7 +2,7 @@ body {
     background-color: rgb(190, 213, 236);
 }
 
-.title {
+.intro {
     font-family: var(--heading-font, cursive);
     font-size: 2em;
     width: fit-content;
