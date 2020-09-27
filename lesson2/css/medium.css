@@ -1,23 +1,39 @@
-@media only screen and (min-width: 32.5rem) {
+@media screen and (min-width:750px) {
+  .principles {
+    columns: 2 30vw;
+    column-gap: 5em;
+    column-rule: var(#01272e) solid .25em;
+  }
 
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .section1 {
-      grid-column: 1 / 1;
-    }
-  
-    .section2 {
-      grid-column: 2 / 2;
-    }
-  
-    .section3 {
-     display: none;
-    }
-  
-    .content {
-      max-width: 80%;
-    }
-}    
+  .designPrinciple {
+    display: grid;
+    border-radius: 2.5em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .designTitle {
+    grid-row: 2;
+  }
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    font-size: .75em;
+  }
+
+  .photo img {
+    width: 30vw;
+    height: auto;
+    margin: 0px 0px;
+  }
+
+figcaption{
+  padding: 1em 0em;
+}
+  .designExplanation {
+    grid-row: 3;
+    line-height: 1.5em;
+  }
+}

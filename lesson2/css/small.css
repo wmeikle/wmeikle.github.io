@@ -3,10 +3,11 @@ body {
 }
 
 .intro {
-    font-size: 2rem;
-    text-align: center;
-    line-height: 1px;
-    font-family: 'Carter One', cursive;
+    font-size: 2em;
+    width: fit-content;
+    line-height: 8vh;
+    float: left;
+    font-family: 'Oswald', sans-serif;
 }
 
 #principles {
@@ -14,12 +15,6 @@ body {
     max-width: 50%;
     margin: 100px auto;
     border-radius: 10px;
-}
-
-img {
-    width: 30vw;
-    height: auto;
-    margin: 0px 0px;
 }
 
 header,
@@ -38,14 +33,20 @@ footer {
 .designExplanation {
     grid-row: 3;
     line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .photo {
-    display: flex;
-    flex-direction: column;
-    grid-row: 1;
-    font-size: .75em;
+    text-align: center;
+    padding: 1vh 0vw;
+    color: black;
+  }
+
+.photo img {
+    width: 250px;
+    height: auto;
 }
+  
 
 #lastModified {
     text-align: center;
