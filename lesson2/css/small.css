@@ -3,11 +3,10 @@ body {
 }
 
 .intro {
-    font-family: var(--heading-font, cursive);
-    font-size: 2em;
-    width: fit-content;
-    line-height: 8vh;
-    float: left;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1px;
+    font-family: 'Carter One', cursive;
 }
 
 #principles {
