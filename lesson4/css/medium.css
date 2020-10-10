@@ -1,0 +1,32 @@
+@media only screen and (min-width: 32.5em) {
+
+    .contentbox {
+        font-size: larger;
+    }
+
+    #logo {
+        width:12em;
+    }
+
+    nav ul.hide,
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .8rem 1rem;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    button {
+        display: none;
+    }
+}

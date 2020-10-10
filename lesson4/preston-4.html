@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title> WDD 230: Weather Track by: Connor Meikle</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/icon.png" alt="cloudy lightning">
+        <section>
+            <h1>
+                Weather Track
+            </h1>
+            <p>We track all the weather. So. Much. Weather. </p>
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="contentbox">Hero w/ weather summary</div>
+        <div class="contentbox">5 Day Forcast</div>
+        <div class="contentbox">Article</div>
+        <div class="contentbox">Contact Information</div>
+    </main>
+    <footer>
+        <p>
+            &copy;Weather Tracker | Attributions | Connor Meikle
+        </p>
+        <div id="lastModified"></div>
+    </footer>
+    <script src="js/lastModified.js"></script>
+    <script src="js/hamburger.js"></script>
+
+</body>
+
+</html>
