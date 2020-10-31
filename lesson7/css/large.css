@@ -1,0 +1,27 @@
+@media only screen and (min-width: 60em) {
+    main {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 25px;
+    }
+
+    #content{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    figcaption{
+        visibility: visible;
+        text-align: center;
+      
+    }
+    figure:hover{
+        padding:5px;
+        box-shadow:5px 5px 5px #999;
+
+    }
+    h2{
+        font-size: 50px;
+    }
+
+
+}
