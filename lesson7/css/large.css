@@ -2,7 +2,6 @@
     main {
         max-width: 1000px;
         margin: auto;
-        font-size: 25px;
     }
 
     #content{
@@ -15,8 +14,7 @@
       
     }
     figure:hover{
-        padding:5px;
-        box-shadow:5px 5px 5px #999;
+        box-shadow:5px 5px 5px 5px rgb(59, 59, 59);
 
     }
     h2{
