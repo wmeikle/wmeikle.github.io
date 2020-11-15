@@ -17,7 +17,7 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 40px;
     margin: 0 auto;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -25,7 +25,7 @@ header h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 40px;
     color: black;
     font-family: 'Roboto';
     text-align: center;
@@ -72,11 +72,6 @@ nav ul.hide {
     display: none;
 }
 
-
-hr {
-    border: 2px solid #465c69;
-    border-radius: 4px;
-}
 
 .contactinfo img {
     display: none;
@@ -128,15 +123,7 @@ footer {
 .info{
     text-align:center;
 }
-h2{
-    font-size:40px;
-}
+
 h3{
     font-size:25px;
-}
-
-.clearfix:after { 
-    content: "";
-    display: table;
-    clear: both;
 }
