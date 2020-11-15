@@ -1,0 +1,26 @@
+@media only screen and (min-width: 60em) {
+    main {
+        max-width: 1250px;
+        margin: auto;
+        font-size: 25px;
+    }
+
+    .places{
+        display:block;
+    }
+
+    .towns{
+        display: flex;
+    }
+
+    .townPic{
+        max-width: 100%;
+        justify-self: end;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+
+}

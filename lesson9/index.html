@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&display=swap">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title> WDD 230: Weather Track by: Connor Meikle</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/icon.png" alt="cloudy lightning">
+        <section>
+            <h1>
+                Weather Track
+            </h1>
+            <p>We track all the weather. So. Much. Weather. </p>
+        </section>
+        <button onclick="toggleMenu()">Menu &#9776;</button>
+    </header>
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="../lesson9/index.html">Home</a></li>
+            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+
+        <div class="towns"></div>
+
+
+        <section class="four">
+            <div class="contactinfo">
+                <img src="images/prestonmap.png" alt="map of preston ID">
+                <div class="contactdetails">
+                    <h3>Contact Us</h3>
+                    <span>9999 DefReal St.<br>A Real Town, ID <br>83346<br>&#9993;
+                        weathertrack@definitely_a_real_email.com<br>&#9742; (123)456-7890</span><br>
+                    <span><a href="http://facebook.com" target="blank">Facebook</a></span>
+                    <span><a href="http://instagram.com" target="blank">Instagram</a></span>
+                    <span><a href="http://twitter.com" target="blank">Twitter</a></span>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>
+            &copy;Weather Tracker | Attributions | Connor Meikle
+        </p>
+        <div id="lastModified"></div>
+    </footer>
+    <script src="js/lastModified.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Roboto"]
+            }
+        })
+    </script>
+    <script src="js/towns.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(190, 213, 236);
+}
+
+header {
+    display: flex;
+    color: aliceblue;
+    background-color:#000333;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 6em;
+    padding: 1em;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: black;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+button {
+    margin: auto;
+    margin-right: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: rgb(250, 246, 246);
+}
+
+nav {
+    background-color: rgb(190, 213, 236);
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+hr {
+    border: 2px solid #465c69;
+    border-radius: 4px;
+}
+
+.contactinfo img {
+    display: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+.contactdetails {
+    text-align: center;
+}
+
+main {
+    max-width: 72em;
+    display: flex;
+    margin: 1em auto;
+}
+
+footer {
+    background-color:#000333;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    max-width: 78em;
+    margin: 1em auto;
+}
+
+.four {
+    border: 3px solid black;
+    display: block;
+    padding: 20px;
+}
+
+.content{
+    justify-content: center;
+    padding:30px;
+}
+.places{
+    display:block;
+    border: 2px solid #000000 ;
+    padding:20px;
+    margin:10px;
+    
+}
+.info{
+    text-align:center;
+}
+h2{
+    font-size:40px;
+}
+h3{
+    font-size:25px;
+}
+
+.clearfix:after { 
+    content: "";
+    display: table;
+    clear: both;
+}
