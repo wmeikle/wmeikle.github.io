@@ -9,9 +9,8 @@ fetch(apiURL)
    document.getElementById('wind-speed').textContent = Math.ceil(jsObject.wind.speed);
 });
 
-const forapi = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=79e15b681560d53f708b95aafeb82274";
-
-fetch(forapi)
+const forcast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=79e15b681560d53f708b95aafeb82274";
+fetch(forcast)
 .then((response) => response.json())
 .then((jsObject) => {
    console.log(jsObject);
