@@ -5,7 +5,7 @@ body {
 header {
     display: flex;
     color: aliceblue;
-    background-color:#000333;
+    background-color: #000333;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
@@ -131,7 +131,8 @@ nav ul.hide {
 article img {
     display: block;
     width: 40%;
-    border-radius: 10px;;
+    border-radius: 10px;
+    ;
     margin: 10px;
     float: left;
 }
@@ -141,11 +142,8 @@ hr {
     border-radius: 4px;
 }
 
-.contactinfo img {
-    display: none;
-}
-
 .contactdetails {
+    display: block;
     text-align: center;
 }
 
@@ -155,8 +153,35 @@ main {
     margin: 1em auto;
 }
 
+.contact-map {
+    padding: 10px 0 0 0;
+}
+
+.map-responsive{
+    display: none;
+}
+
+.map-responsive iframe{
+    max-width: fit-content;
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+.socialIcon {
+    max-width:30px;
+}
+
+.fiveday {
+    display: none;
+}
+
+h3 {
+    text-align: center;
+}
+
 footer {
-    background-color:#000333;
+    background-color: #000333;
     border-radius: 10px;
     text-align: center;
     padding: 10px;

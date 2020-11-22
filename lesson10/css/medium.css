@@ -42,13 +42,13 @@
 
     .contactinfo {
         margin-bottom: 2em;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
     }
 
-    .contactinfo img {
-        display: block;
-        height: 200px;
-        float: left;
-        margin-right: 3em;
+    .socialIcon {
+       max-width: 50px;
     }
 
     .weatherupdate {
@@ -59,7 +59,55 @@
         margin: 20px;
     }
 
+    .map-responsive{
+        display: block;
+        max-width: 25%;
+        float: left;
+        margin-right: 3em;
+    } 
+
+   iframe {
+       max-width: 100%;
+   }
+
     .article h3 {
         display: inline-block;
     }
+
+    .fiveday {
+        display: block;
+        margin: 0;
+      }
+    
+      .fiveday table {
+        text-align: center;
+        border: 1px solid #011C26;
+      }
+      .fiveday [id^="icon"] { 
+        width: 100px;}
+    
+      table th {
+        background-color: #024059;
+        color: #fff;
+      }
+    
+      table img {
+        width: 50%;
+      }
+    
+      table,
+      th {
+        border: 1px solid #011C26;
+        border-collapse: collapse;
+      }
+    
+      table td {
+        border-right: 1px solid #011C26;
+        ;
+      }
+
+      table {
+          margin-left: auto;
+          margin-right: auto;
+      }
 }

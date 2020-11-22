@@ -56,41 +56,50 @@
 
             <section class="weatherupdate">
                 <h3>Weather Summary</h3>
-                <p>Currently: <span id="current"></span></p>
-                <p>Temperature: <span id="currentTemp"></span>&#730;F</p>
-                <p>Wind Speed: <span id="wind-speed"></span> MPH</p>
-                <p>Wind Chill: <span id="windChill"></span>&#730;F</p>
+                <p>Currently: <span id="weather"></span></p>
+                <p>Temperature: <span id='current-temp'></span>&#730;F</p>
+                <p>Wind Speed: <span id="speed"></span> MPH</p>
+                <p>Wind Chill: <span id="output"></span>&#730;F</p>
 
             </section>
         </div>
 
-        <aside id="forecast">
-            <div class="box">
-                <span class="title">Mon</span>
-                <img src="images/cloud.png" alt="cloudy">
-                <span>67&#730;F</span>
-            </div>
-            <div class="box">
-                <span class="title">Tue</span>
-                <img src="images/sun.png" alt="sunny">
-                <span>62&#730;F</span>
-            </div>
-            <div class="box">
-                <span class="title">Wed</span>
-                <img src="images/sun.png" alt="sunny">
-                <span>64&#730;F</span>
-            </div>
-            <div class="box">
-                <span class="title">Thur</span>
-                <img src="images/sun.png" alt="sunny">
-                <span>53&#730;F</span>
-            </div>
-            <div class="box">
-                <span class="title">Fri</span>
-                <img src="images/cloud.png" alt="cloudy">
-                <span>53&#730;F</span>
-            </div>
-        </aside>
+        <div class ="fiveday">
+            <h3>5 Day Forecast</h3>
+        <table>
+            <tr>
+              <th><span id="dayofweek1"></span></th>
+              <th><span id="dayofweek2"></span></th>
+              <th><span id="dayofweek3"></span></th>
+              <th><span id="dayofweek4"></span></th>
+              <th><span id="dayofweek5"></span></th>
+            </tr>
+            <tr>
+              <td><img id="icon1"
+                  src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                  alt="unknown" /></td>
+              <td><img id="icon2"
+                  src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                  alt="unknown"></td>
+              <td><img id="icon3"
+                  src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                  alt="unknown"></td>
+              <td><img id="icon4"
+                  src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                  alt="unknown"></td>
+              <td><img id="icon5"
+                  src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                  alt="unknown"></td>
+            </tr>
+            <tr>
+              <td><span id="forecast1"></span>&#8457;</td>
+              <td><span id="forecast2"></span>&#8457;</td>
+              <td><span id="forecast3"></span>&#8457;</td>
+              <td><span id="forecast4"></span>&#8457;</td>
+              <td><span id="forecast5"></span>&#8457;</td>
+            </tr>
+          </table>
+          </div>
         <article class="article">
             <img src="images/rainy.jpg" alt="real rainy">
             <h3>Very Nice Article</h3>
@@ -111,14 +120,22 @@
         </article>
         <hr>
         <div class="contactinfo">
-            <img src="images/prestonmap.png" alt="map of preston ID">
+            <div class="map">
+                <div class="map-responsive">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477162.8598707267!2d-111.73498111887461!3d42.13350395839597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1605405945809!5m2!1sen!2sus"></iframe>
+                </div>
+              </div>
             <div class="contactdetails">
                 <h3>Contact Us</h3>
-                <span>9999 DefReal St.<br>A Real Town, ID <br>83346<br>&#9993;
+                <span>9999 DefReal St.<br>A Real Town, ID 83346<br>&#9993;
                     weathertrack@definitely_a_real_email.com<br>&#9742; (123)456-7890</span><br>
-                <span><a href="http://facebook.com" target="blank">Facebook</a></span>
-                <span><a href="http://instagram.com" target="blank">Instagram</a></span>
-                <span><a href="http://twitter.com" target="blank">Twitter</a></span>
+                <span><a href="http://facebook.com" target="blank"><img class="socialIcon"
+                    src="images/facebookicon.png" alt="facebook"></a></span>
+                <span><a href="http://instagram.com" target="blank"><img
+                    class="socialIcon" src="images/instagramicon.png"
+                    alt="insta"></a></span>
+                <span><a href="http://twitter.com" target="blank"><img class="socialIcon"
+                    src="images/twittericon.png" alt="twitter"></a></span>
             </div>
         </div>
     </main>
