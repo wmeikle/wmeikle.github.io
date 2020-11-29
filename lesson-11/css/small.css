@@ -73,7 +73,7 @@ nav ul.hide {
 }
 
 .weatherupdate {
-    font-size: .5em;
+    font-size: .8em;
     position: absolute;
     padding: 5px;
     top: 1em;
@@ -130,11 +130,14 @@ nav ul.hide {
 
 article img {
     display: block;
-    width: 40%;
+    max-width: 38%;
     border-radius: 10px;
-    ;
     margin: 10px;
     float: left;
+}
+
+.banner, .three, #events{
+    margin:40px;
 }
 
 hr {
@@ -183,6 +186,7 @@ main {
 .eventTitle{
     border-bottom:1px solid #023c19;
     font-size: 30px;
+    text-align: center;
 }
 
 h3 {

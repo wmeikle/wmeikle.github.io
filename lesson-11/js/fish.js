@@ -35,38 +35,31 @@ fetch(forecastURL)
         }
 
     });
-const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        console.table(jsonObject);
-        const towns = jsonObject['towns'];
-        for (let i = 0; i < towns.length; i++) {
-            const eventInfo = document.createElement('div');
-            if (towns[i].name == "Preston" && currentURL.indexOf("preston.html") > 0) {
-                eventInfo.setAttribute('class', 'eventInfo');
-                for (let x = 0; x <= towns[i].events.length; x++) {
-                    let para = document.createElement('p');
-                    para.textContent = towns[i].events[x]
-                    eventInfo.appendChild(para);
-                }
-            } else if (towns[i].name == "Soda Springs" && currentURL.indexOf('sodasprings.html') > 0) {
-                eventInfo.setAttribute('class', 'eventInfo');
-                for (let x = 0; x <= towns[i].events.length; x++) {
-                    let para = document.createElement('p');
-                    para.textContent = towns[i].events[x];
-                    eventInfo.appendChild(para);
-                }
-            } else if (towns[i].name == "Fish Haven" && currentURL.indexOf('fishhaven.html') > 0) {
-                eventInfo.setAttribute('class', 'eventInfo');
-                for (let x = 0; x <= towns[i].events.length; x++) {
-                    let para = document.createElement('p');
-                    para.textContent = towns[i].events[x];
-                    eventInfo.appendChild(para);
-                }
-            }
-            document.getElementById('events').appendChild(eventInfo);
+    let requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+    let request = new XMLHttpRequest();
+    request.open("GET", requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function () {
+      let towndata = request.response;
+      showData(towndata);
+    }
+    function showData(jsonObj) {
+      let town = jsonObj["towns"];
+    
+      for (let i = 0; i < town.length; i++) {
+        if (town[i].name == "Fish Haven") {
+          let article = document.getElementById("events");
+          let para1 = document.createElement("ul");
+    
+          for (let a = 0; a < town[i].events.length; a++) {
+            let listItem = document.createElement("p");
+            listItem.textContent = town[i].events[a];
+            para1.appendChild(listItem);
+          }
+    
+          article.appendChild(para1);
+    
         }
-    });
+      }
+    }
