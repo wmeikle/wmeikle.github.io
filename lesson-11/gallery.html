@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lesson7/css/small.css">
+    <link rel="stylesheet" href="/lesson7/css/medium.css">
+    <link rel="stylesheet" href="/lesson7/css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&display=swap">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title> WDD 230: Weather Track by: Connor Meikle</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/icon.png" alt="cloudy lightning">
+        <section>
+            <h1>
+                Weather Track
+            </h1>
+            <p>We track all the weather. So. Much. Weather. </p>
+        </section>
+        <button onclick="toggleMenu()">Menu &#9776;</button>
+    </header>
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Weather Gallery</h2>
+        <section id="content">
+        <figure>
+            <img src="/lesson7/images/Placeholder.jpg" data-src="/lesson7/images/tornado.jpg" alt="tornado">
+            <figcaption>Hot Dang! Watch out for that tornado! </figcaption>
+        </figure>
+        <figure>
+            <img  src="/lesson7/images/Placeholder.jpg" data-src="/lesson7/images/sunshine.jpg" alt="sunny">
+            <figcaption>Something about this sunny picture looks familiar...</figcaption>
+        </figure>
+        <figure>
+            <img  src="/lesson7/images/Placeholder.jpg" data-src="/lesson7/images/rainbow.jpg" alt="rainbow">
+            <figcaption>Its a rainbow. That is all. </figcaption>
+        </figure>
+        <figure>
+            <img src="/lesson7/images/Placeholder.jpg" data-src="/lesson7/images/rainy.jpg" alt="rainy">
+            <figcaption>Really curious as to what is so important that you have to be biking out in that kind of weather. </figcaption>
+        </figure>
+        <figure>
+            <img src="/lesson7/images/Placeholder.jpg" data-src="/lesson7/images/lightning.jpg" alt="lightning">
+            <figcaption>OK, this storm is getting a little fierce. </figcaption>
+
+        </figure>
+        <figure>
+            <img src="/lesson7/images/Placeholder.jpg" data-src="/lesson7/images/Lightning City.jpg" alt="lightning city">
+            <figcaption>This is definitely a real city in Idaho. Im about 12% sure. </figcaption>
+        </figure>
+        <figure>
+            <img src="/lesson7/images/Placeholder.jpg" data-src="/lesson7/images/calmsky.jpg" alt="calm">
+            <figcaption>The rain finally stopped! Sky starting to calm down.</figcaption>
+        </figure>
+        <figure>
+            <img src="/lesson7/images/Placeholder.jpg" data-src="/lesson7/images/lotsofumbrellas.jpg" alt="umbrella">
+            <figcaption>Apparently people got a little too excited when it stopped raining and threw their umbrellas.</figcaption>
+        </figure>
+        <figure>
+            <img src="/lesson7/images/Placeholder.jpg" data-src="/lesson7/images/angryzeus.jpg" alt="hes real mad">
+            <figcaption>Who in this town thought it would be a good idea to make Zeus angry??</figcaption>
+        </figure>
+        <script src="/lesson7/js/imagehandling.js"></script>
+        </section>
+    </main> 
+    <footer>
+        <p>
+            &copy;Weather Tracker | Attributions | Connor Meikle <a href="../index.html">Assignment Portal</a></span>
+        </p>
+        <div id="lastModified"></div>
+    </footer>
+    <script src="js/lastModified.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Roboto"]
+            }
+        })
+    </script> 
+
+</body>
+
+</html>

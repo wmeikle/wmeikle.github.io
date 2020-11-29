@@ -45,7 +45,7 @@ fetch(requestURL)
 
                 image.setAttribute('class','townPic');
                 
-                image.setAttribute('src','images/'+ towns[i].photo);
+                image.setAttribute('src','/lesson9/images/'+ towns[i].photo);
                 
                 image.setAttribute('alt','Image of' + ' ' + towns[i].name);
 

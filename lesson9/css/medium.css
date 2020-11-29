@@ -60,14 +60,25 @@
 
     .contactinfo {
         margin-bottom: 2em;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
     }
 
-    .contactinfo img {
+    .socialIcon {
+       max-width: 50px;
+    }
+
+    .map-responsive{
         display: block;
-        height: 200px;
+        max-width: 25%;
         float: left;
         margin-right: 3em;
-    }
+    } 
+
+   iframe {
+       max-width: 100%;
+   }
 
 
 }

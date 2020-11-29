@@ -73,10 +73,6 @@ nav ul.hide {
 }
 
 
-.contactinfo img {
-    display: none;
-}
-
 .townPic{
     display: block;
     max-width: 100%;
@@ -126,4 +122,23 @@ footer {
 
 h3{
     font-size:25px;
+}
+
+.contact-map {
+    padding: 10px 0 0 0;
+}
+
+.map-responsive{
+    display: none;
+}
+
+.map-responsive iframe{
+    max-width: fit-content;
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+.socialIcon {
+    max-width:30px;
 }
