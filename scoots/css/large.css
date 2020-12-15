@@ -1,0 +1,92 @@
+@media only screen and (min-width: 65em) {
+
+    .motto{
+        display: inline;
+    }
+
+    
+    .vespa{
+        float: left;
+        max-width:20%;
+    }
+    .info{
+        padding:30px;
+        margin:0 auto;
+    }
+    .today{
+        font-size:30px;
+    }
+    
+    h2 {
+        font-size: 60px;
+    }
+    .call-to-action{
+       margin-top:60px;
+        width:360px;
+    }
+    
+    .weatherInfo{
+        margin-top:50px;
+    }
+    
+    .weather-headline{
+        font-size:1.5rem;
+    }
+    
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .desc{
+        margin-left:40px;
+    }
+    .locations{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: space-around;
+        padding: 35px;
+    }
+    iframe{
+        padding:15px;
+    }
+    
+    /*tours*/
+    
+    
+    
+    .puntaSur,.sunset,.lighthouse,.snorkeling,.call{
+        display:flex;
+        margin:20px;
+        padding:10px;
+        text-align: center;
+    }
+    
+    .sunset,.lighthouse{
+        flex-direction: row-reverse;
+        
+    }
+    
+    .sun,.beach,.house{
+        margin:25px;
+    }
+    .first,.second,.third,.four,.jeepTour{
+        margin:0 auto;
+    }
+    /*contact*/
+    .howTo,.call,.review{
+        margin:50px;
+    }
+    .call{
+        border:3px solid #af7a6d;
+       
+    }
+    .callUs{
+        margin-top:50px;
+        padding:5px;
+    }
+   
+    
+    }
