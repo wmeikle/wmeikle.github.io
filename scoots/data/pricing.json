@@ -1,0 +1,46 @@
+{
+    "rentals" :[
+      {
+        "name" : "Metro",
+        "rhalfday" :"$20",
+        "rfullday" :"$30",
+        "whalfday" :"$25",
+        "wfullday" :"$35"
+      }, 
+      {
+        "name" : "Dio",
+        "rhalfday" :"$30",
+        "rfullday" :"$40",
+        "whalfday" :"$35",
+        "wfullday" :"$45"
+      }, 
+      {
+        "name" : "PCX150 Scooter",
+        "rhalfday" :"$40",
+        "rfullday" :"$50",
+        "whalfday" :"$45",
+        "wfullday" :"$55"
+      }, 
+      {
+        "name" : "ATV",
+        "rhalfday" :"$50",
+        "rfullday" :"$70",
+        "whalfday" :"$60",
+        "wfullday" :"$80"
+      }, 
+      {
+        "name" : "2 door jeep",
+        "rhalfday" :"$60",
+        "rfullday" :"$85",
+        "whalfday" :"$70",
+        "wfullday" :"$90"
+      },
+      {
+        "name" : "4 door Jeep",
+        "rhalfday" :"$70",
+        "rfullday" :"$100",
+        "whalfday" :"$85",
+        "wfullday" :"$125"
+      }
+    ]
+  }

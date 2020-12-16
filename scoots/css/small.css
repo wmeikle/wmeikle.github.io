@@ -267,7 +267,29 @@ footer {
     text-align: center;
 }
 
+/*rentals*/
+.pricing table,
+.pricing th,
+.pricing td {
+  border: 1px solid #023047;
+  padding: 2px 4px;
+}
 
+.pricing {
+  border-collapse: collapse;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #023047;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.pricing th {
+  background-color: #024059;
+  border-top: none;
+  color: white;
+}
 /*tours*/
 .puntaSur,
 .sunset,
