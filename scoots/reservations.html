@@ -62,16 +62,16 @@
             <fieldset>
                 <legend>Rental Information</legend>
                 <label class="top">When do you want it?<input type="date" name="rentalDate"></label>
-                <label class="top" for="rental">Which one you want?
-                    <input list="rental-type" id="rental" name="rentaltype" /></label>
-                <datalist id="rental-type">
-                    <option value="Honda Metro Scooter (Only Seats 1)(Sorry you dont have friends)">
-                    <option value="Honda Dio Scooter (Seats 2)(You found a friend! Good job buddy!)">
-                    <option value="Honda PCX150 Scooter (Seats 2)(Is it a special friend? So proud.)">
-                    <option value="Honda Pioneer ATV (Seats 4)(Unless they real big)">
-                    <option value="Jeep Wrangler 4 door W/ AC (Seats 5)(You sure you have 5 friends?)">
-                    <option value="Jeep Wrangler 2 door (Seats 4)(Baby jeep But no a/c so it gun be hot)">    
-                </datalist>
+                <label class="top" for="rental">Which one you want?</label>
+                <select id="rental-type" name="type" class="form-control">
+                    <option value=""></option>
+                    <option value="Honda Metro Scooter (Only Seats 1)(Sorry you dont have friends)">Honda Metro Scooter (Only Seats 1)(Sorry you dont have friends)</option>
+                    <option value="Honda Dio Scooter (Seats 2)(You found a friend! Good job buddy!)">Honda Dio Scooter (Seats 2)(You found a friend! Good job buddy!)</option>
+                    <option value="Honda PCX150 Scooter (Seats 2)(Is it a special friend? So proud.)">Honda PCX150 Scooter (Seats 2)(Is it a special friend? So proud.)</option>
+                    <option value="Honda Pioneer ATV (Seats 4)(Unless they real big)">Honda Pioneer ATV (Seats 4)(Unless they real big)</option>
+                    <option value="Jeep Wrangler 4 door W/ AC (Seats 5)(You sure you have 5 friends?)">Jeep Wrangler 4 door W/ AC (Seats 5)(You sure you have 5 friends?)</option>
+                    <option value="Jeep Wrangler 2 door (Seats 4)(Baby jeep But no a/c so it gun be hot)">Jeep Wrangler 2 door (Seats 4)(Baby jeep But no a/c so it gun be hot)</option>    
+                </select>
                 <div>How long you want it for? </div>
                 <label class="sbs"><input type="radio" name="time" value="yes" checked>Half Day</label>
                 <label class="sbs"><input type="radio" name="time" value="no">Whole Day</label>
