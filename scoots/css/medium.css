@@ -1,40 +1,46 @@
-@media only screen and (min-width: 35em){
+@media only screen and (min-width: 755px) {
 
 
 
     button {
         display: none;
     }
-    
+
     nav ul.hide,
     nav ul {
         display: flex;
     }
-    
+
     nav ul li {
         flex: 1 1 100%;
     }
-    
+
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
         padding: .8rem 1rem;
     }
-    
+
     nav ul {
         margin-left: 2%;
     }
+
     header {
         display: flex;
         text-align: center;
         align-items: center;
         justify-content: center;
     }
-    
-     .logo {
+
+    h2.emphasized {
+        padding: 5px 10px;
+        font-size: 1.75rem;
+    }
+
+    .logo {
         margin-left: 30px;
     }
-    
+
     .weather {
         background: url(../images/jeep4.jpg) center/cover no-repeat;
         grid-template-columns: 1fr 30% 10% 1fr;
@@ -42,49 +48,72 @@
         margin-bottom: 60px;
         grid-gap: 15px;
         padding-bottom: 30px;
-      }
-    
-      .weathersummary {
+    }
+
+    .weathersummary {
         justify-self: stretch;
         grid-column: 2;
         grid-row: 1;
         padding: 55px 0;
-      }
-    
-      .weathersummary,
-      .threeday ul {
+    }
+
+    .weathersummary,
+    .threeday ul {
         background-color: rgba(175, 175, 175, 0.5);
-      }
-    
-      .threeday {
+    }
+
+    .threeday {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-column: 3;
         grid-row: 1;
-      }
-    
-    .motto {
-    display:inline-block;
-    margin-right:80px;
-    margin-top:40px;
-    font-size: 12px;
-    font-style: italic;
     }
-    .weather-headline{
+
+    .motto {
+        display: inline-block;
+        margin-right: 80px;
+        margin-top: 40px;
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    .weather-headline {
         font-size: .99rem;
     }
-    .vespa{
+
+    .vespa {
         max-width: 60%;
     }
-    
-    
-    /*tours*/
-    .first,.second,.third,.four,.jeepTour{
-    padding:70px;
-    margin:35px;
-       
+
+    /*rentals*/
+    .rentals {
+        display: grid;
+        max-width: 1024px;
+        grid-template-columns: 1fr 1fr;
     }
-    .howTo,.call{
+
+    .rentals p {
+        font-size: 1rem;
+    }
+
+    .info {
+        justify-content: center;
+    }
+
+
+    /*tours*/
+    .first,
+    .second,
+    .third,
+    .four,
+    .jeepTour {
+        padding: 70px;
+        margin: 35px;
+
+    }
+
+    .howTo,
+    .call {
         text-align: center;
     }
-    }
+}

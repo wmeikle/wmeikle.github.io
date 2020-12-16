@@ -1,10 +1,14 @@
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 1155px) {
 
     .motto{
         display: inline;
     }
 
-    
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
     .vespa{
         float: left;
         max-width:20%;
@@ -17,9 +21,16 @@
         font-size:30px;
     }
     
+    h2.emphasized {
+        margin: 0 0 30px;
+    }
+
     h2 {
         font-size: 60px;
     }
+
+   
+
     .call-to-action{
        margin-top:60px;
         width:360px;
@@ -52,6 +63,21 @@
     iframe{
         padding:15px;
     }
+
+    /*rentals*/
+
+    .rentals {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: space-evenly;
+        Padding-left: 50px;
+      }
+    
+    
+      .rentals img {
+        width: 100%;
+      }
+
+      
     
     /*tours*/
     

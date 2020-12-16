@@ -29,18 +29,19 @@
         "wfullday" :"$80"
       }, 
       {
-        "name" : "2 door jeep",
-        "rhalfday" :"$60",
-        "rfullday" :"$85",
-        "whalfday" :"$70",
-        "wfullday" :"$90"
-      },
-      {
         "name" : "4 door Jeep",
         "rhalfday" :"$70",
         "rfullday" :"$100",
         "whalfday" :"$85",
         "wfullday" :"$125"
+      },
+      {
+        "name" : "2 door jeep",
+        "rhalfday" :"$60",
+        "rfullday" :"$85",
+        "whalfday" :"$70",
+        "wfullday" :"$90"
       }
+      
     ]
   }
