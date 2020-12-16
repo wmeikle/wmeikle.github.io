@@ -345,7 +345,7 @@ footer {
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #0b5351;
+    border: 1px solid#99BB77;
     border-radius: 10px;
     padding: .5rem 2%;
 
@@ -367,12 +367,13 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #0b5351;
+    color:#99BB77;
     font-size: 15px;
 }
 
 form label.top input,
-form label.top select {
+form label.top select,
+form label.top textarea {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -393,7 +394,7 @@ form label.sbs {
 
 form input.submitButn {
     border: none;
-    background-color: #0b5351;
+    background-color:#99BB77;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -402,11 +403,6 @@ form input.submitButn {
 
 }
 
-
-
-form label.top input:required {
-    border-left: red solid 6px;
-}
 
 form label.top input:required:valid {
     border-left: green solid 6px;

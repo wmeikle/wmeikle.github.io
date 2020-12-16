@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+    <link rel="shortcut icon" href="images/scootsfavicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <div class="weatheralert">
+        <p>Weather alert: <span id="alert"></span><span id="alertdesc"></span></p>
+    </div>
+    <header>
+        <picture class="logo">
+            <img src="images/scootslogo.png" alt="scoots logo" width="100px" height="">
+        </picture>
+        <section class="motto">
+            <h1 class="explore">It's time to explore in style</h1>
+        </section>
+        <button onclick="toggleMenu();">&#9776;</button>
+    </header>
+
+    <nav class="clearfix">
+
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home </a> </li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li class="active"><a href="#">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <h2>Rent Something Already!</h2>
+        <form method="get" action="confirmation.html">
+            <fieldset>
+                <legend>Renter Contact Information</legend>
+                <label class="top"> Full Name* <input type="text" name="name" required ></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="youremailhere@gmail.com" required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="(123)456-7890" required></label>
+                <label class="top">Billing Address*<input type="text" name="adr" placeholder="4321 Make Something Up Rd" required></label>
+                <label class="top">City*<input type="text" name="city" placeholder="Phoenix(the best city duh)"required></label>
+                <label class="top">State*<input type="text" name="state" placeholder="Arizona(the best state duh)" required></label>
+                <label for="num" class="top">Zip code*<input type="number" id="num" name="num" required></label>
+                <label class="top">Country/Province*<input type="text" name="Country" placeholder="United States" required></label>
+
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Rental Information</legend>
+                <label class="top">When do you want it?<input type="date" name="rentalDate"></label>
+                <label class="top" for="rental">Which one you want?
+                    <input list="rental-type" id="rental" name="rentaltype" /></label>
+                <datalist id="rental-type">
+                    <option value="Honda Metro Scooter (Only Seats 1)(Sorry you dont have friends)">
+                    <option value="Honda Dio Scooter (Seats 2)(You found a friend! Good job buddy!)">
+                    <option value="Honda PCX150 Scooter (Seats 2)(Is it a special friend? So proud.)">
+                    <option value="Honda Pioneer ATV (Seats 4)(Unless they real big)">
+                    <option value="Jeep Wrangler 4 door W/ AC (Seats 5)(You sure you have 5 friends?)">
+                    <option value="Jeep Wrangler 2 door (Seats 4)(Baby jeep But no a/c so it gun be hot)">    
+                </datalist>
+                <div>How long you want it for? </div>
+                <label class="sbs"><input type="radio" name="time" value="yes" checked>Half Day</label>
+                <label class="sbs"><input type="radio" name="time" value="no">Whole Day</label>
+                <label class="sbs"><input type="radio" name="time" value="maybe">Forever (Haha just kidding you can't)</label>
+                <div>Can you even drive? Do you have a license to prove it? (Bascically I dont trust you) </div>
+                <label class="sbs"><input type="radio" name="license" value="yes" checked>Yes</label>
+                <label class="sbs"><input type="radio" name="license" value="no">No</label>
+                <label class="sbs"><input type="radio" name="license" value="maybe">Maybe(You think you're pretty funny dont you?)</label>  
+                      
+              
+                
+
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>You want me to drive it all the way to you?</legend>
+                <div>Are you really sure you want me to drop it off to you?</div>
+                <label class="sbs"><input type="radio" name="drop-off" value="yes"checked>Yes</label>
+                <label class="sbs"><input type="radio" name="drop-off" value="no">No(Clicking this one makes you a good person)</label>
+                <div>If you answered yes, first of all how dare you. Second, where do you want me to drop it off? </div>
+                <label class="sbs"><input type="radio" name="audience" value="yes" checked>Address</label>
+                <label class="sbs"><input type="radio" name="audience" value="no">Cruise-Line</label>
+                <label class="sbs"><input type="radio" name="audience" value="maybe">Hotel</label>
+                <label class="sbs">Address for drop-off <input type="text" name="adr" placeholder="4321 Better Not Be Far Rd" ></label>
+                <label class="sbs">Hotel Name (If Applicable) <input type="text" name="hotel" placeholder="Which fancy hotel is it"></label>
+                <label class="sbs">Cruise-Line for drop-off <input type="text" name="ship" placeholder="Super Ritzy Ship Name" ></label>
+
+                <label class="top" for="comments">Explain why you need me to do all this extra work.</label>
+                <textarea id="comments" name="comments" rows="5" cols="33"></textarea>
+
+
+            </fieldset>
+            <input type="submit" value="Rent It!" class="submitButn">
+        </form>
+        <div class="agreement">
+            <h3>Information and Services</h3>
+            <ul>
+              <li>A $50 security deposit is required to confirm reservations.</li>
+              <li>A valid drivers license is required in hand at time of rental.</li>
+              <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+              <li>Fuel charge not included.</li>
+              <li>Unlimited mileage.</li>
+              <li>Liability insurance is free of charge.</li>
+              <li>Reservations rate requires 24 hour prior notification.</li>
+              <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+              <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+              <li>Rentals may be returned to either location.</li>
+              <li>Helmets included with rental</li>
+            </ul>
+          </div>
+
+    <section class="contact">
+        <div>
+            <h3>Contact Us</h3>
+            <p>Email: customer-support@scoots.com</p>
+            <p>Call: (123)456-7890</p>
+            <p>Follow us on social!</p>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100002451197113"> <img class="socialIcon"
+                    src="images/facebookicon.png" alt="Facebook"></a>
+            <a target="_blank" href="https://twitter.com/?lang=en"><img class="socialIcon" src="images/twittericon.png"
+                    alt="twitter"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img class="socialIcon" src="images/instagramicon.png"
+                    alt="Instagram"></a>
+        </div>
+    </section>
+
+    </main>
+    <footer>
+        <p>
+            &copy;Scoots | Weather Provided by openweathermap.org | Connor Meikle <a href="../index.html">Assignment
+                Portal</a></span>
+        </p>
+        <div id="lastModified"></div>
+    </footer>
+    <script src="js/lastModified.js"></script>
+    <script src="/lesson9/js/hamburger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/weather.js"></script>
+
+</body>
+
+</html>
