@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="images/scootsfavicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -17,14 +18,16 @@
 
 <body>
     <div class="weatheralert">
-        <p>Weather alert: <span id="alert"></span><span id="alertdesc"></span></p>
-      </div>
+        <span id="alert"></span>
+        <span id="alertdesc"></span>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>
     <header>
         <picture class="logo">
             <img src="images/scootslogo.png" alt="scoots logo" width="100px" height="">
         </picture>
         <section class="motto">
-            <h1 class="explore">Lets go explore!</h1>
+            <h1 class="explore">Lets go explore together!</h1>
         </section>
         <button onclick="toggleMenu();">&#9776;</button>
     </header>
@@ -45,58 +48,56 @@
         <section class="small-view">
             <picture class="banner">
                 <source media="(max-width:375px)" srcset="images/banner-small.jpg">
-                <source media="(max-width:650px)" srcset="images/banner-medium.jpg">   
+                <source media="(max-width:650px)" srcset="images/banner-medium.jpg">
                 <img src="images/banner.jpg" alt="motorcycle">
             </picture>
             <section class="info">
-            <p>Scoots Motor Co is a motor scooter rental company located on the Island of Cozumel off the coast of Mexico in
-                the western Carribean Sea. We cater to locals, walk-in tourists, enthusiasts, and cruise-based touring
-                groups and partnerships! We promote friendly and easy to rent services of motor scooters, jeeps, and
-                side-by-sides ATVs.
-                We have two physical rental locations here on Cozumel. One of our locations is near the Playa del
-                Carmen-Cozumel Ferry dock in el Centro de Cozumel and our second location is near the Terminal Puerta Maya,
-                further south along the coast which caters to the cruise lines and patrons. </p>
-               
-                </section>
+                <p>Scoots Is a company that will help you come alive. Ride along the coast of Mexico on a scooter, atv,
+                    or jeep and realize just how much you really needed a vacation. Just think about it now. Picture it.
+                    You need this. You have to click that reservations tab and start planning your trip. Do it now. NOW.
+                    We have two physical rental locations here on Cozumel. Go to our contact tab for more detailed information.
+                </p>
+
+            </section>
         </section>
         <h2>Weather</h2>
         <section class="weatherInfo">
             <h3 class="weather-headline">Dont want to get drenched on your ride? Check the weather ahead of time!</h3>
             <div class="weatherCol">
         </section>
-    <section class="weather">
-      <div class="weathersummary">
-        <h2>Today's Weather</h2>
-        <img id="icon">
-        <p>Currently: <span id="weather"></span> </p>
-        <p>Current Temp: <span id="current-temp"></span></p>
-        <p>Feels Like: <span id="feels_like"></span></p>
-        <p>Humidity: <span id="humidity"></span></p>
-      </div>
-      <div class="threeday">
-        <ul>
-          <li><span id="dayofweek1"></span></li>
-          <li class="icon"><img id="icon1"
-              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
-              alt="unknown" /></li>
-          <li><span id="forecast1"></span>&#8457;</li>
-        </ul>
-        <ul>
-          <li><span id="dayofweek2"></span></li>
-          <li class="icon"><img id="icon2"
-              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
-              alt="unknown"></li>
-          <li><span id="forecast2"></span>&#8457;</li>
-        </ul>
-        <ul>
-          <li><span id="dayofweek3"></span></li>
-          <li class="icon"><img id="icon3"
-              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
-              alt="unknown"></li>
-          <li><span id="forecast3"></span>&#8457;</li>
-        </ul>
-      </div>
-    </section>
+        <section class="weather">
+            <div class="weathersummary">
+                <h2>Today's Weather</h2>
+                <img id="icon">
+                <p>Currently: <span id="weather"></span> </p>
+                <p>Current Temp: <span id="current-temp"></span></p>
+                <p>Feels Like: <span id="feels_like"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+            </div>
+            <div class="threeday">
+                <ul>
+                    <li><span id="dayofweek1"></span></li>
+                    <li class="icon"><img id="icon1"
+                            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                            alt="unknown" /></li>
+                    <li><span id="forecast1"></span>&#8457;</li>
+                </ul>
+                <ul>
+                    <li><span id="dayofweek2"></span></li>
+                    <li class="icon"><img id="icon2"
+                            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                            alt="unknown"></li>
+                    <li><span id="forecast2"></span>&#8457;</li>
+                </ul>
+                <ul>
+                    <li><span id="dayofweek3"></span></li>
+                    <li class="icon"><img id="icon3"
+                            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                            alt="unknown"></li>
+                    <li><span id="forecast3"></span>&#8457;</li>
+                </ul>
+            </div>
+        </section>
         <div class="call-to-action">
             <p class="action">Book a rental with us today!</p>
             <span><a class="click" href="reservations.html">Click here for reservations</a></span>
@@ -109,8 +110,7 @@
                 <p>Call: (123)456-7890</p>
                 <p>Follow us on social!</p>
                 <a target="_blank" href="https://www.facebook.com/profile.php?id=100002451197113"> <img
-                        class="socialIcon" src="images/facebookicon.png"
-                        alt="Facebook"></a>
+                        class="socialIcon" src="images/facebookicon.png" alt="Facebook"></a>
                 <a target="_blank" href="https://twitter.com/?lang=en"><img class="socialIcon"
                         src="images/twittericon.png" alt="twitter"></a>
                 <a target="_blank" href="https://www.instagram.com/"><img class="socialIcon"
@@ -121,7 +121,8 @@
     </main>
     <footer>
         <p>
-            &copy;Scoots | Weather Provided by openweathermap.org | Connor Meikle <a href="../index.html">Assignment Portal</a></span>
+            &copy;Scoots | Weather Provided by openweathermap.org | Connor Meikle <a href="../index.html">Assignment
+                Portal</a></span>
         </p>
         <div id="lastModified"></div>
     </footer>

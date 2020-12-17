@@ -59,7 +59,7 @@
 
     .weathersummary,
     .threeday ul {
-        background-color: rgba(175, 175, 175, 0.5);
+        background-color: rgba(204, 204, 204, 0.5);
     }
 
     .threeday {
@@ -81,10 +81,6 @@
         font-size: .99rem;
     }
 
-    .vespa {
-        max-width: 60%;
-    }
-
     /*rentals*/
     .rentals {
         display: grid;
@@ -104,14 +100,12 @@
     /*tours*/
     .first,
     .second,
-    .third,
-    .four,
-    .jeepTour {
+    .third {
         margin: 35px;
 
     }
 
-    .scooter,.daJeep,.atv,.snorkeling,.call {
+    .scooter,.daJeep,.atv {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
@@ -119,8 +113,4 @@
         text-align: center;
     }
 
-    .howTo,
-    .call {
-        text-align: center;
-    }
 }

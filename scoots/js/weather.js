@@ -23,6 +23,11 @@ fetch(APIurl)
     document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
     document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
   }
-  document.getElementById('alert').innerHTML = jsObject.alerts.event;
-  document.getElementById('alertdesc').innerHTML = jsObject.alerts.description;
+  if (jsObject.hasOwnProperty('alerts')) {
+    document.querySelector('.weatheralert').style.display = 'block';
+    document.getElementById('alert').innerHTML = jsObject.alerts[0].event;
+    document.getElementById('alertdesc').innerHTML = jsObject.alerts[0].description;
+  } else {
+    document.querySelector('.weatheralert').style.display = 'none';
+  }
 });
