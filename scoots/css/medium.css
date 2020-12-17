@@ -107,9 +107,16 @@
     .third,
     .four,
     .jeepTour {
-        padding: 70px;
         margin: 35px;
 
+    }
+
+    .scooter,.daJeep,.atv,.snorkeling,.call {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
     }
 
     .howTo,

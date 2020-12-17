@@ -329,10 +329,7 @@ footer {
     margin: 0;
   }
 /*tours*/
-.puntaSur,
-.sunset,
-.lighthouse,
-.snorkeling {
+.scooter,.daJeep,.atv,.snorkeling,.call {
     padding: 30px;
 }
 

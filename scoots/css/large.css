@@ -83,14 +83,14 @@
     
     
     
-    .puntaSur,.sunset,.lighthouse,.snorkeling,.call{
+    .scooter,.daJeep,.atv,.snorkeling,.call{
         display:flex;
         margin:20px;
         padding:10px;
         text-align: center;
     }
     
-    .sunset,.lighthouse{
+    .daJeep,.atv{
         flex-direction: row-reverse;
         
     }
